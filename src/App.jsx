@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import NewsList from './components/NewsList';
@@ -7,51 +7,26 @@ import ReadArticle from './components/ReadArticle';
 import './App.css';
 
 const App = () => {
-  // Sample news data (replace with API data later)
-  const news = [
-    {
-      id: 1,
-      title: 'Breaking News: React is Awesome!',
-      description: 'Learn how to build a news website using React.',
-      imageUrl: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1AUlkS.img?w=549&h=309&m=6&x=216&y=96&s=106&d=106',
-      fullContent: 'React is a powerful JavaScript library for building user interfaces. It allows developers to create reusable components and manage state efficiently.',
-    },
-    {
-      id: 2,
-      title: 'World News: Global Summit on Climate Change',
-      description: 'Leaders from around the world gather to discuss climate action.',
-      imageUrl: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1AZc7g.img?w=768&h=432&m=6',
-      fullContent: 'The global summit on climate change brought together leaders from over 100 countries to discuss strategies for reducing carbon emissions and promoting sustainable development.',
-    },
-    {
-      id: 3,
-      title: 'Technology: AI Revolutionizing Industries',
-      description: 'Artificial Intelligence is transforming the way we work and live.',
-      imageUrl: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1AUCay.img?w=768&h=432&m=6&x=435&y=105&s=158&d=158',
-      fullContent: 'Artificial Intelligence (AI) is revolutionizing industries such as healthcare, finance, and transportation by automating processes and providing data-driven insights.',
-    },
-    {
-      id: 4,
-      title: 'Breaking News: React is Awesome!',
-      description: 'Learn how to build a news website using React.',
-      imageUrl: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1A4nAa.img?w=768&h=432&m=6&x=600&y=36&s=120&d=120',
-      fullContent: 'React is a powerful JavaScript library for building user interfaces. It allows developers to create reusable components and manage state efficiently.',
-    },
-    {
-      id: 5,
-      title: 'World News: Global Summit on Climate Change',
-      description: 'Leaders from around the world gather to discuss climate action.',
-      imageUrl: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1AZc7g.img?w=768&h=432&m=6',
-      fullContent: 'The global summit on climate change brought together leaders from over 100 countries to discuss strategies for reducing carbon emissions and promoting sustainable development.',
-    },
-    {
-      id: 6,
-      title: 'Technology: AI Revolutionizing Industries',
-      description: 'Artificial Intelligence is transforming the way we work and live.',
-      imageUrl: 'https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1AUlkS.img?w=549&h=309&m=6&x=216&y=96&s=106&d=106',
-      fullContent: 'Artificial Intelligence (AI) is revolutionizing industries such as healthcare, finance, and transportation by automating processes and providing data-driven insights.',
-    },
-  ];
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    fetchNews('general'); // Fetch general category news when component mounts
+  }, []);
+
+  const fetchNews = async (category) => {
+    try {
+      const response = await fetch(`http://localhost:8080/news/fetchByCategory?category=${category}`);
+      if (response.ok) {
+        const data = await response.json();
+        // Assuming the response is wrapped in an array and you want the 'articles' array from the first object
+        setNews(data[0].articles); // Set the articles array to state
+      } else {
+        console.error("Error fetching news data.");
+      }
+    } catch (error) {
+      console.error("Error fetching news:", error);
+    }
+  };
 
   return (
     <Router>

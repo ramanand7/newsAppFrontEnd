@@ -1,0 +1,74 @@
+[
+    {
+        "id": "general",
+        "status": "ok",
+        "totalResults": 34,
+        "articles": [
+            {
+                "source": {
+                    "id": null,
+                    "name": "CBS Sports"
+                },
+                "author": "",
+                "title": "2025 NCAA Tournament scores, schedule: March Madness bracket, game dates, locations, tip times, TV channels - CBS Sports",
+                "description": "Check out the master schedule for the NCAA Tournament so you can watch all the March Madness 2025 action",
+                "url": "https://www.cbssports.com/college-basketball/news/2025-ncaa-tournament-scores-schedule-march-madness-bracket-game-dates-locations-tip-times-tv-channels/",
+                "urlToImage": "https://sportshub.cbsistatic.com/i/r/2025/03/17/8c1e333e-896b-4c70-853a-26462e2813ab/thumbnail/1200x675/0c564e2a7523ea630995df762948c9d0/march-madness-logo-2024-men-towels-g.jpg",
+                "publishedAt": "2025-03-20T04:15:00Z",
+                "content": "The March Madness bracket is off and running with the 68-team field that comprised 2025 NCAA Tournament already down to 64 teams as North Carolina, Alabama State, Mount Saint Mary's and Xavier have a… [+6598 chars]"
+            },
+            {
+                "source": {
+                    "id": null,
+                    "name": "KOB"
+                },
+                "author": "Mesha Begay",
+                "title": "Jury finds Solomon Peña guilty of orchestrating shootings at lawmakers’ homes - KOB 4",
+                "description": "Solomon Peña is accused of targeting the homes of four Democratic lawmakers after he lost his bid for a seat in the state House of Representatives.",
+                "url": "https://www.kob.com/new-mexico/jury-reaches-verdict-in-solomon-pena-trial/",
+                "urlToImage": "https://www.kob.com/wp-content/uploads/2023/01/SOLOMONPENAARREST-Cropped.jpg",
+                "publishedAt": "2025-03-20T03:45:00Z",
+                "content": "ALBUQUERQUE, N.M. — A jury found Solomon Peña guilty on all counts Wednesday evening. He’s the man accused of targeting the homes of four Democratic lawmakers after he lost his bid for a seat in the … [+2702 chars]"
+            },
+            {
+                "source": {
+                    "id": "politico",
+                    "name": "Politico"
+                },
+                "author": "Kyle Cheney, Josh Gerstein",
+                "title": "Trump is seeking to deport another academic who is legally in the country, lawsuit says - POLITICO",
+                "description": "Badar Khan Suri, a fellow at Georgetown, says he is being punished because of the suspected views of his wife, a U.S. citizen with Palestinian heritage.",
+                "url": "https://www.politico.com/news/2025/03/19/trump-deportation-georgetown-graduate-student-00239754",
+                "urlToImage": "https://static.politico.com/8f/49/466549a24316ab9b8cdabcf28ddf/campus-death-georgia-86558.jpg",
+                "publishedAt": "2025-03-20T00:10:52Z",
+                "content": "Suri has no criminal record and has not been charged with a crime, his petition says. His detention and petition have not been previously reported.\r\nSuris lawyer, Hassan Ahmad, argued in his petition… [+3570 chars]"
+            },
+            {
+                "source": {
+                    "id": "abc-news",
+                    "name": "ABC News"
+                },
+                "author": "ABC News",
+                "title": "Judge denies effort to reinstate US Institute of Peace board, but criticizes DOGE's 'abominable' treatment of staff - ABC News",
+                "description": null,
+                "url": "https://abcnews.go.com/Politics/judge-denies-effort-reinstate-us-institute-peace-board/story?id\\\\u003d119965865",
+                "urlToImage": null,
+                "publishedAt": "2025-03-19T22:41:15Z",
+                "content": null
+            },
+            {
+                "source": {
+                    "id": "techcrunch",
+                    "name": "TechCrunch"
+                },
+                "author": "Kyle Wiggers",
+                "title": "OpenAI’s o1-pro is the company’s most expensive AI model yet - TechCrunch",
+                "description": "OpenAI has launched a more powerful version of its o1 \"reasoning\" AI model, o1-pro, in its developer API. It's incredibly expensive.",
+                "url": "https://techcrunch.com/2025/03/19/openais-o1-pro-is-its-most-expensive-model-yet/",
+                "urlToImage": "https://techcrunch.com/wp-content/uploads/2024/12/GettyImages-2021258442.jpg?resize=1200,800",
+                "publishedAt": "2025-03-19T22:40:45Z",
+                "content": "OpenAI has launched a more powerful version of its o1 “reasoning” AI model, o1-pro, in its developer API. \r\nAccording to OpenAI, o1-pro uses more computing than o1 to provide “consistently better res… [+1313 chars]"
+            }
+        ]
+    }
+]
